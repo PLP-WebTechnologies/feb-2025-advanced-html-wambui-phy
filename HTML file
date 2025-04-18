@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #333;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>Welcome to Our Webpage</h1>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Steps to Complete Registration</h2>
+  <ol type="I">
+    <li>Fill in your personal information</li>
+    <li>Choose your preferences</li>
+    <li>Agree to the terms</li>
+    <li>Submit the form</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Inspiration Image</h2>
+  <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Nature from Pexels">
+
+  <!-- Table of Contacts -->
+  <h2>Contact List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jane Doe</td>
+        <td>123 Main St, NY</td>
+        <td>123-456-7890</td>
+        <td>jane@example.com</td>
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>456 Oak Ave, CA</td>
+        <td>234-567-8901</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Emily Johnson</td>
+        <td>789 Pine Rd, TX</td>
+        <td>345-678-9012</td>
+        <td>emily@example.com</td>
+      </tr>
+      <tr>
+        <td>Michael Brown</td>
+        <td>321 Birch Blvd, FL</td>
+        <td>456-789-0123</td>
+        <td>michael@example.com</td>
+      </tr>
+      <tr>
+        <td>Lisa Ray</td>
+        <td>654 Elm St, WA</td>
+        <td>567-890-1234</td>
+        <td>lisa@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Register Now</h2>
+  <form action="#" method="post">
+
+    <!-- Name -->
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email -->
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+    <!-- Password -->
+    <label for="password">Password *</label>
+    <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required minlength="6">
+
+    <!-- Date -->
+    <label for="dob">Date of Birth *</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <!-- Dropdown -->
+    <label for="country">Select Country *</label>
+    <select id="country" name="country" required>
+      <option value="">--Choose Country--</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <label>Gender *</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male" style="display:inline;">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female" style="display:inline;">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other" style="display:inline;">Other</label>
+
+    <!-- Checkboxes -->
+    <label>Interests:</label>
+    <input type="checkbox" id="sports" name="interests" value="sports">
+    <label for="sports" style="display:inline;">Sports</label>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music" style="display:inline;">Music</label>
+    <input type="checkbox" id="reading" name="interests" value="reading">
+    <label for="reading" style="display:inline;">Reading</label>
+
+    <!-- Submit -->
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
